@@ -1,0 +1,100 @@
+#experience {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.expTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.expDesc {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.expContainer {
+  display: flex;
+  gap: 2rem; /* controls the spacing between cards */
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 80%;
+}
+
+.expCard {
+  background: rgb(50, 50, 50);
+  color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 300px; /* fixed width for equal cards */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 1rem;
+}
+
+.expCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.expImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.expText {
+  padding: 1rem;
+  text-align: left;
+}
+
+.expText h2 {
+  font-size: 1.2rem;
+  color: #4dabf7;
+  margin-bottom: 0.25rem;
+}
+
+.expText h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #ddd;
+}
+
+.expDate {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 0.75rem;
+}
+
+.expText p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 720px) {
+  .expContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expCard {
+    width: 90%;
+  }
+}
