@@ -1,6 +1,5 @@
 import React from 'react';
 import './intro.css';
-import bg from '../../assets/profile3.png';
 import btnImg from '../../assets/hireme.png';
 import { Link } from 'react-scroll';
 
@@ -23,7 +22,6 @@ export const Intro = () => {
         </Link>
 
       </div>
-      <img src={bg} alt="profile" className="bg" />
     </section>
   );
 };
